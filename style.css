@@ -1,3 +1,4 @@
+
 body {
     background: #030713;
     background-image: url("slava-abramovitch-enAcB20iHAg-unsplash.jpg") ;
@@ -5,6 +6,11 @@ body {
     background-attachment:fixed;
     height: 100%;
     margin: 0;
+    width: 100%;
+}
+
+.main-container {
+    display: grid;
 }
 
 .whitetxt, .logo > a {
@@ -14,31 +20,19 @@ body {
 
 /* TOP HEADER */
 .mainheader {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    justify-content: space-between;
     border: 8px solid white;
-    margin: 20px;
+    padding: 25px 180px;
 }
 
 .logo {
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 400;
-    padding: 20px;
-    padding-left: 80px;
-    margin: 20px;
 }
 
-
- /* {
-    text-decoration:none;
-    color: white;
-} */
-
 .nav {
-    /* padding: 20px; 
-    padding-left: 80px;
-    margin: 3px 18px;  */
     justify-self: center;
     align-self: center;
 }
@@ -47,38 +41,38 @@ body {
     color: black;
     background: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 9px 30px;
-    margin: 0 4px;
+    padding: 10px 20px;
+    font-size: 18px;
 }
 
 /* Hello world + Earth */
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.Hello-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
 }
 
-.heading {
-    grid-column: 1/2;
+.HelloWorld {
     align-self: center;
     justify-self: center;
     font-family:Arial, Helvetica, sans-serif;
+    /* padding: 20px; */
 }
 .hello {
-    font-size: 50px;
+    font-size: 3.2em;
     margin-bottom: 0;
 }
 
 .world {
-    font-size: 120px;
+    font-size: 7em;
     margin-top: 0;
 }
 
 .earth {
-    grid-column: 2/3;
     align-self: center;
     justify-self: center;
     width: 450px;
     height: auto;
-    margin: 80px 60px;
+    margin: 2em;
 }
